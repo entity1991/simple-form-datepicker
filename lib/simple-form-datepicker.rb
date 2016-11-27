@@ -30,7 +30,6 @@ class DatepickerInput < SimpleForm::Inputs::StringInput
 
   # Builds the input text field and an hidden field with class attribute_name-alt 
   def input(wrapper_options)
-    @builder.text_field(attribute_name, input_html_options) + \
-    @builder.hidden_field(attribute_name, value: input_html_options[:value], class: attribute_name.to_s + "-alt")
+    @builder.text_field(attribute_name, input_html_options)
   end
 end  
